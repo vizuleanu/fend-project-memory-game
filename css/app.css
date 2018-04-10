@@ -112,6 +112,43 @@ h1 {
     margin-left: 50px;
 }
 
+/* Media Queries*/
+@media screen and (max-width: 700px) {
+    .deck {
+      width: 550px;
+      min-height: 580px;
+    }
+  
+    .deck .card {
+        max-height: 100px;
+        max-width: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    .deck {
+      width: 450px;
+      min-height: 480px;
+    }
+  
+    .deck .card {
+        max-height: 80px;
+        max-width: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+    .deck {
+      width: 350px;
+      min-height: 380px;
+    }
+  
+    .deck .card {
+        max-height: 60px;
+        max-width: 60px;
+    }
+  }
+
 /*
  * Win modal styes
  */
