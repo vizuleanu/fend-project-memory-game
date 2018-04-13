@@ -26,3 +26,24 @@ var timer = {
     minutes: 0,
     clearTime: -1
 };
+
+// Add timer on page and update HTML
+var startTimer = function() {
+    if (timer.seconds === 59) {
+        timer.minutes++;
+        timer.seconds = 0;
+    } else {
+        timer.seconds++;
+    }
+
+    //single digit seconds are preceded with a 0
+    var formattedSec = "0";
+    if (timer.seconds < 10) {
+        formattedSec += timer.seconds
+    } else {
+        formattedSec = String(timer.seconds);
+    }
+
+    var time = String(timer.minutes) + ":" + formattedSec;
+    $(".timer").text(time);
+};
