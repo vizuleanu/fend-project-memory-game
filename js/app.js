@@ -58,6 +58,13 @@ function resetTimer() {
     timer.clearTime = setInterval(startTimer, 1000);
 };
 
+// Difficulty settings (max number of moves for each star)
+var hard = 15;
+var medium = 20;
+
+var modal = $("#win-modal");
+
+
 // Randomizes cards on board and updates card HTML
 function updateCards() {
     deck = shuffle(deck);
