@@ -57,3 +57,14 @@ function resetTimer() {
 
     timer.clearTime = setInterval(startTimer, 1000);
 };
+
+// Randomizes cards on board and updates card HTML
+function updateCards() {
+    deck = shuffle(deck);
+    var index = 0;
+    $.each($(".card i"), function(){
+      $(this).attr("class", "fa " + deck[index]);
+      index++;
+    });
+    resetTimer();
+};
