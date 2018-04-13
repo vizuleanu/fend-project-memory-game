@@ -68,3 +68,8 @@ function updateCards() {
     });
     resetTimer();
 };
+
+// Toggles win modal on
+function showModal() {
+    modal.css("display", "block");
+};
