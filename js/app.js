@@ -108,3 +108,13 @@ function updateMoveCounter() {
 function isValid(card) {
     return !(card.hasClass("open") || card.hasClass("match"));
 };
+
+
+// Returns whether or not currently open cards match
+function checkMatch() {
+    if (open[0].children().attr("class")===open[1].children().attr("class")) {
+        return true;
+    } else {
+        return false;
+    }
+};
