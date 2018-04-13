@@ -94,3 +94,12 @@ function resetStars() {
     numStars = 3;
     $(".num-stars").text(String(numStars));
 };
+
+// Updates number of moves in the HTML, removes star is necessary based on difficulty variables
+function updateMoveCounter() {
+    $(".moves").text(moveCounter);
+
+    if (moveCounter === hard || moveCounter === medium) {
+        removeStar();
+    }
+};
