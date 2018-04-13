@@ -80,3 +80,17 @@ function updateCards() {
 function showModal() {
     modal.css("display", "block");
 };
+
+// Removes last start from remaining stars, updates modal HTML
+function removeStar() {
+    $(".fa-star").last().attr("class", "fa fa-star-o");
+    numStars--;
+    $(".num-stars").text(String(numStars));
+};
+
+// Restores star icons to 3 stars, updates modal HTML
+function resetStars() {
+    $(".fa-star-o").attr("class", "fa fa-star");
+    numStars = 3;
+    $(".num-stars").text(String(numStars));
+};
