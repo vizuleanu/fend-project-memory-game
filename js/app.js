@@ -103,3 +103,8 @@ function updateMoveCounter() {
         removeStar();
     }
 };
+
+// Checks if card is a valid move (if it not currently matched or open)
+function isValid(card) {
+    return !(card.hasClass("open") || card.hasClass("match"));
+};
