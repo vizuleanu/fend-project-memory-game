@@ -47,3 +47,13 @@ var startTimer = function() {
     var time = String(timer.minutes) + ":" + formattedSec;
     $(".timer").text(time);
 };
+
+// Resets timer state and restarts timer
+function resetTimer() {
+    clearInterval(timer.clearTime);
+    timer.seconds = 0;
+    timer.minutes = 0;
+    $(".timer").text("0:00");
+
+    timer.clearTime = setInterval(startTimer, 1000);
+};
