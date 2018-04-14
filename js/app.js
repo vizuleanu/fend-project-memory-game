@@ -159,3 +159,15 @@ function openCard(card) {
         open.push(card);
     }
 };
+
+// Resets all game state variables and resets all required HTML to default state
+var resetGame = function() {
+    open = [];
+    matched = 0;
+    moveCounter = 0;
+    resetTimer();
+    updateMoveCounter();
+    $(".card").attr("class", "card");
+    updateCards();
+    resetStars();
+};
