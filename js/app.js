@@ -200,3 +200,14 @@ var playAgain = function() {
     resetGame();
     modal.css("display", "none");
 };
+
+/*
+ * Initalize event listeners
+ */
+
+$(".card").click(onClick);
+$(".restart").click(resetGame);
+$(".play-again").click(playAgain);
+
+// Provides a randomized game board on page load
+$(updateCards);
