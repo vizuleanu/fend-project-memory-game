@@ -141,3 +141,12 @@ var setMatch = function() {
         showModal();
     }
 };
+
+// Sets currently open cards back to default state
+var resetOpen = function() {
+    open.forEach(function(card) {
+        card.toggleClass("open");
+        card.toggleClass("show");
+    });
+    open = [];
+};
