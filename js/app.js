@@ -1,5 +1,7 @@
 //List that holds all of the cards
-let cards = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o", "fa-anchor", "fa-anchor", "fa-bolt", "fa-bolt", "fa-cube", "fa-cube", "fa-leaf", "fa-leaf", "fa-bicycle", "fa-bicycle", "fa-bomb", "fa-bomb"];
+var deck = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o", "fa-anchor", "fa-anchor",
+           "fa-bolt", "fa-bolt", "fa-cube", "fa-cube", "fa-leaf", "fa-leaf",
+           "fa-bicycle", "fa-bicycle", "fa-bomb", "fa-bomb"];
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
