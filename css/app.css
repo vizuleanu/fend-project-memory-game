@@ -147,8 +147,24 @@ h1 {
         max-height: 60px;
         max-width: 60px;
     }
+
+    .score-panel {
+        width: 250px;
+    }
   }
 
+  @media screen and (max-width: 370px) {
+    .deck {
+      width: 260px;
+      min-height: 280px;
+    }
+  
+    .deck .card {
+        max-height: 40px;
+        max-width: 40px;
+    }
+  }
+  
 /*
  * Win modal styes
  */
