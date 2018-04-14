@@ -127,3 +127,17 @@ function hasWon() {
         return false;
     }
 };
+
+// Sets currently open cards to the match state, checks win condition
+var setMatch = function() {
+    open.forEach(function(card) {
+        card.addClass("match");
+    });
+    open = [];
+    matched += 2;
+
+    if (hasWon()) {
+        clearInterval(timer.clearTime);
+        showModal();
+    }
+};
