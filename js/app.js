@@ -194,3 +194,9 @@ var onClick = function() {
         }
     }
 };
+
+// Resets game state and toggles win modal display off
+var playAgain = function() {
+    resetGame();
+    modal.css("display", "none");
+};
