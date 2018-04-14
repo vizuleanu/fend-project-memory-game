@@ -118,3 +118,12 @@ function checkMatch() {
         return false;
     }
 };
+
+// Returns win condition
+function hasWon() {
+    if (matched === 16) {
+        return true;
+    } else {
+        return false;
+    }
+};
