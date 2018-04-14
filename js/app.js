@@ -64,7 +64,7 @@ function resetTimer() {
 var hard = 15;
 var medium = 20;
 
-var modal = $("#win-modal");
+let modal = $("#win-modal");
 
 
 // Randomizes cards on board and updates card HTML
