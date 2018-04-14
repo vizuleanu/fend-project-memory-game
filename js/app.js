@@ -171,3 +171,26 @@ var resetGame = function() {
     updateCards();
     resetStars();
 };
+
+// Handles primary game logic of game
+var onClick = function() {
+    if (isValid( $(this) )) {
+
+        if (open.length === 0) {
+            openCard( $(this) );
+
+        } else if (open.length === 1) {
+            openCard( $(this) );
+            moveCounter++;
+            updateMoveCounter();
+
+            if (checkMatch()) {
+                setTimeout(setMatch, 300);
+
+            } else {
+                setTimeout(resetOpen, 700);
+
+            }
+        }
+    }
+};
