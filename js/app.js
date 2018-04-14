@@ -150,3 +150,12 @@ var resetOpen = function() {
     });
     open = [];
 };
+
+// Sets selected card to the open and shown state
+function openCard(card) {
+    if (!card.hasClass("open")) {
+        card.addClass("open");
+        card.addClass("show");
+        open.push(card);
+    }
+};
